@@ -1,6 +1,6 @@
 package org.chitalkin.ru.adapters.ui;
 
-public interface StarterUI {
+public interface UIShop {
 
     void show();
 }
