@@ -2,20 +2,20 @@ package org.chitalkin.ru.adapters.persistence.repository.imp;
 
 import org.chitalkin.ru.adapters.persistence.entity.BookEntity;
 import org.chitalkin.ru.adapters.persistence.repository.BookRepository;
-import org.chitalkin.ru.adapters.persistence.storage.BookStorage;
+import org.chitalkin.ru.adapters.persistence.storage.BookDao;
 
 import java.util.List;
 
 public class BookRepositoryImpl implements BookRepository {
 
-    private final BookStorage bookStorage;
+    private final BookDao bookDao;
 
-    public BookRepositoryImpl(BookStorage bookStorage) {
-        this.bookStorage = bookStorage;
+    public BookRepositoryImpl(BookDao bookDao) {
+        this.bookDao = bookDao;
     }
 
     @Override
     public List<BookEntity> getAll() {
-        return bookStorage.getAll();
+        return bookDao.getAll();
     }
 }

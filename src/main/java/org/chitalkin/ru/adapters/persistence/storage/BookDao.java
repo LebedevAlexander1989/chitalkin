@@ -4,7 +4,7 @@ import org.chitalkin.ru.adapters.persistence.entity.BookEntity;
 
 import java.util.List;
 
-public interface BookStorage {
+public interface BookDao {
 
     List<BookEntity> getAll();
 }

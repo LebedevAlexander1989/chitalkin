@@ -1,8 +1,8 @@
 package org.chitalkin.ru.core.service.impl;
 
 import org.chitalkin.ru.adapters.persistence.repository.BookRepository;
-import org.chitalkin.ru.core.dto.BookDto;
-import org.chitalkin.ru.core.mapper.BookDtoMapper;
+import org.chitalkin.ru.core.domain.Book;
+import org.chitalkin.ru.core.mapper.BookMapper;
 import org.chitalkin.ru.core.service.BookService;
 
 import java.util.List;
@@ -10,19 +10,19 @@ import java.util.List;
 public class BookServiceImpl implements BookService {
 
     private final BookRepository bookRepository;
-    private final BookDtoMapper bookDtoMapper;
+    private final BookMapper bookMapper;
 
     public BookServiceImpl(BookRepository bookRepository,
-                           BookDtoMapper bookDtoMapper) {
+                           BookMapper bookMapper) {
         this.bookRepository = bookRepository;
-        this.bookDtoMapper = bookDtoMapper;
+        this.bookMapper = bookMapper;
     }
 
     @Override
-    public List<BookDto> getAll() {
+    public List<Book> getAll() {
         return bookRepository.getAll()
                 .stream()
-                .map(bookDtoMapper::toBookDto)
+                .map(bookMapper::toBook)
                 .toList();
     }
 }

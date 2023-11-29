@@ -1,6 +1,6 @@
 package org.chitalkin.ru.adapters.ui.validator;
 
-public interface UIShopMenuInputValidator {
+public interface UIShopConsoleMenuInputValidator {
 
     int validInput();
 }

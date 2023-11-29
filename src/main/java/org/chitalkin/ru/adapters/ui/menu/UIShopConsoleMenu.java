@@ -1,6 +1,6 @@
 package org.chitalkin.ru.adapters.ui.menu;
 
-public interface UIShopMenu {
+public interface UIShopConsoleMenu {
 
     void show();
 }

@@ -1,11 +1,11 @@
 package org.chitalkin.ru.adapters.persistence.storage.impl;
 
 import org.chitalkin.ru.adapters.persistence.entity.BookEntity;
-import org.chitalkin.ru.adapters.persistence.storage.BookStorage;
+import org.chitalkin.ru.adapters.persistence.storage.BookDao;
 
 import java.util.List;
 
-public class BookStorageImpl implements BookStorage {
+public class BookDaoImpl implements BookDao {
 
     private final List<BookEntity> books =
             List.of(

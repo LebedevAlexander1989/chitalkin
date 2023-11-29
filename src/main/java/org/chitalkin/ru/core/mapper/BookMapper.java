@@ -1,12 +1,12 @@
 package org.chitalkin.ru.core.mapper;
 
 import org.chitalkin.ru.adapters.persistence.entity.BookEntity;
-import org.chitalkin.ru.core.dto.BookDto;
+import org.chitalkin.ru.core.domain.Book;
 
-public class BookDtoMapper {
+public class BookMapper {
 
-    public BookDto toBookDto(BookEntity bookEntity) {
-        return BookDto.builder()
+    public Book toBook(BookEntity bookEntity) {
+        return Book.builder()
                 .id(bookEntity.getId())
                 .name(bookEntity.getName())
                 .build();

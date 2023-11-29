@@ -1,10 +1,10 @@
 package org.chitalkin.ru.adapters.ui.input.impl;
 
-import org.chitalkin.ru.adapters.ui.input.UIShopMenuInput;
+import org.chitalkin.ru.adapters.ui.input.UIShopConsoleMenuInput;
 
 import java.util.Scanner;
 
-public class UIShopMenuInputImpl implements UIShopMenuInput {
+public class UIShopConsoleMenuInputImpl implements UIShopConsoleMenuInput {
 
     private final Scanner scanner = new Scanner(System.in);
 

@@ -1,10 +1,10 @@
 package org.chitalkin.ru.core.service;
 
-import org.chitalkin.ru.core.dto.BookDto;
+import org.chitalkin.ru.core.domain.Book;
 
 import java.util.List;
 
 public interface BookService {
 
-    List<BookDto> getAll();
+    List<Book> getAll();
 }

@@ -1,6 +1,6 @@
 package org.chitalkin.ru.adapters.ui.input;
 
-public interface UIShopMenuInput {
+public interface UIShopConsoleMenuInput {
 
     String input();
 }

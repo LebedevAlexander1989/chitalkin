@@ -1,11 +1,11 @@
-package org.chitalkin.ru.core.dto;
+package org.chitalkin.ru.core.domain;
 
 import lombok.Builder;
 import lombok.Getter;
 
 @Builder
 @Getter
-public class BookDto {
+public class Book {
 
     private int id;
     private String name;

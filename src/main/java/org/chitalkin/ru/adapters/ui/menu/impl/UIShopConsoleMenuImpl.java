@@ -1,20 +1,20 @@
 package org.chitalkin.ru.adapters.ui.menu.impl;
 
 import org.chitalkin.ru.adapters.ui.dto.OutputBookDto;
-import org.chitalkin.ru.adapters.ui.management.UIShopManagement;
-import org.chitalkin.ru.adapters.ui.menu.UIShopMenu;
-import org.chitalkin.ru.adapters.ui.validator.UIShopMenuInputValidator;
+import org.chitalkin.ru.adapters.ui.management.UIShopConsoleManagement;
+import org.chitalkin.ru.adapters.ui.menu.UIShopConsoleMenu;
+import org.chitalkin.ru.adapters.ui.validator.UIShopConsoleMenuInputValidator;
 
 import java.util.List;
 
-public class UIShopMenuImpl implements UIShopMenu {
+public class UIShopConsoleMenuImpl implements UIShopConsoleMenu {
 
-    private final UIShopManagement management;
+    private final UIShopConsoleManagement management;
 
-    private final UIShopMenuInputValidator validator;
+    private final UIShopConsoleMenuInputValidator validator;
 
-    public UIShopMenuImpl(UIShopManagement management,
-                          UIShopMenuInputValidator validator) {
+    public UIShopConsoleMenuImpl(UIShopConsoleManagement management,
+                                 UIShopConsoleMenuInputValidator validator) {
         this.management = management;
         this.validator = validator;
     }

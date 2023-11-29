@@ -4,7 +4,7 @@ import org.chitalkin.ru.adapters.ui.dto.OutputBookDto;
 
 import java.util.List;
 
-public interface UIShopManagement {
+public interface UIShopConsoleManagement {
 
     List<OutputBookDto> showAll();
 }
