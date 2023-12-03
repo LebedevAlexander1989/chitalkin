@@ -17,8 +17,9 @@
     <packaging>pom</packaging>
     <name>Library</name>
     <description>Library project for Spring Boot</description>
+
     <modules>
-        <module>admin_library</module>
+        <module>admin-library</module>
     </modules>
 
     <properties>
