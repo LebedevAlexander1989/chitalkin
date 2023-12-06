@@ -10,7 +10,7 @@
 
     <properties>
         <lombok.version>1.18.30</lombok.version>
-        <springBoot.version>2.4.5</springBoot.version>
+        <springBoot.version>3.2.0</springBoot.version>
     </properties>
 
     <dependencyManagement>
