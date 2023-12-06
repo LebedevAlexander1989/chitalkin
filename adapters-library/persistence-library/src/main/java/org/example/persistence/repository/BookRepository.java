@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface BookRepository extends KeyValueRepository<BookEntity, Integer> {
 
-    List<BookEntity> getAll();
+    List<BookEntity> findAll();
 }

@@ -17,7 +17,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<Book> getAll() {
-        return bookRepository.getAll()
+        return bookRepository.findAll()
                 .stream()
                 .map(b -> new Book(b.getId(), b.getName()))
                 .toList();

@@ -11,6 +11,7 @@
     <properties>
         <lombok.version>1.18.30</lombok.version>
         <springBoot.version>3.2.0</springBoot.version>
+        <springDoc.version>2.2.0</springDoc.version>
     </properties>
 
     <dependencyManagement>
@@ -30,7 +31,13 @@
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>2.2.0</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
 </project>
