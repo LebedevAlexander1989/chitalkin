@@ -15,6 +15,9 @@
             <groupId>org.example</groupId>
             <artifactId>persistence-library</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>api-library</artifactId>
+        </dependency>
     </dependencies>
-
 </project>

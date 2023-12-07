@@ -19,7 +19,7 @@ public class ApiLibraryController implements ApiLibrary {
 
     private final BookService bookService;
     @Override
-    @GetMapping(produces = "application/json")
+    @GetMapping(value = "/all/", produces = "application/json")
     public @ResponseBody List<ResponseBookDto> getAll() {
         return bookService.getAll()
                 .stream()
