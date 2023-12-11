@@ -6,7 +6,7 @@ import org.example.api.dto.ResponseBookDto;
 import org.example.api.dto.ResponseStatusBookDto;
 import org.example.api.service.ApiLibraryService;
 import org.example.core.domain.StatusBook;
-import org.example.core.dto.BookDto;
+import org.example.core.domain.Book;
 import org.example.core.service.BookService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -31,13 +31,13 @@ public class ApiLibraryServiceImpl implements ApiLibraryService {
 
     @Override
     public ResponseBookDto add(RequestBookDto requestBookDto) {
-        BookDto bookDto = bookService.add(modelMapper.map(requestBookDto, BookDto.class));
-        return modelMapper.map(bookDto, ResponseBookDto.class);
+        Book book = bookService.add(modelMapper.map(requestBookDto, Book.class));
+        return modelMapper.map(book, ResponseBookDto.class);
     }
 
     @Override
     public void update(RequestBookDto requestBookDto) {
-        bookService.update(modelMapper.map(requestBookDto, BookDto.class));
+        bookService.update(modelMapper.map(requestBookDto, Book.class));
     }
 
     @Override

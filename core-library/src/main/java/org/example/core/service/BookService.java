@@ -1,16 +1,16 @@
 package org.example.core.service;
 
-import org.example.core.dto.BookDto;
+import org.example.core.domain.Book;
 
 import java.util.List;
 
 public interface BookService {
 
-    List<BookDto> getAll();
+    List<Book> getAll();
 
-    BookDto add(BookDto bookDto);
+    Book add(Book book);
 
-    void update(BookDto bookDto);
+    void update(Book book);
 
     String getStatus(int id);
 }

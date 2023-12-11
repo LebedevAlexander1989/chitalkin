@@ -1,11 +1,10 @@
-package org.example.core.dto;
+package org.example.core.domain;
 
 import lombok.*;
-import org.example.core.domain.StatusBook;
 
 @Getter
 @Setter
-public class BookDto {
+public class Book {
     private Integer id;
     private String name;
     private Integer numberShelf;

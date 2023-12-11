@@ -1,7 +1,7 @@
 package org.example.starter.config;
 
 import org.example.core.domain.StatusBook;
-import org.example.core.dto.BookDto;
+import org.example.core.domain.Book;
 import org.example.persistence.entity.BookEntity;
 import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;
@@ -20,9 +20,9 @@ public class ConfigApp {
         final ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setSkipNullEnabled(true);
         final Converter<String, StatusBook> converter = ctx -> ctx.getSource() == null ? null : StatusBook.valueOf(ctx.getSource());
-        modelMapper.typeMap(BookEntity.class, BookDto.class)
+        modelMapper.typeMap(BookEntity.class, Book.class)
                 .addMappings(mapper -> mapper.using(converter)
-                        .map(BookEntity::getStatus, BookDto::setStatusBook));
+                        .map(BookEntity::getStatus, Book::setStatusBook));
         return modelMapper;
     }
 }
