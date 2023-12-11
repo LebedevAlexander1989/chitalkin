@@ -31,8 +31,7 @@ public class ApiLibraryServiceImpl implements ApiLibraryService {
 
     @Override
     public ResponseBookDto add(RequestBookDto requestBookDto) {
-        BookDto map = modelMapper.map(requestBookDto, BookDto.class);
-        BookDto bookDto = bookService.add(map);
+        BookDto bookDto = bookService.add(modelMapper.map(requestBookDto, BookDto.class));
         return modelMapper.map(bookDto, ResponseBookDto.class);
     }
 

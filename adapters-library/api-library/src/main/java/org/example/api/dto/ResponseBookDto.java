@@ -4,16 +4,12 @@ package org.example.api.dto;
 import lombok.*;
 import org.example.core.domain.StatusBook;
 
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class ResponseBookDto {
-    private long id;
+    private Integer id;
     private String name;
-    private int numberShelf;
-
+    private Integer numberShelf;
     private StatusBook status;
     @Override
     public String toString() {

@@ -42,20 +42,9 @@ public class BookServiceImpl implements BookService {
     public void update(BookDto bookDto) {
         Optional<BookEntity> opt = bookRepository.findById(bookDto.getId());
         if (opt.isPresent()) {
-//            BookEntity entity = opt.get();
-//            if (bookDto.getName() != null) {
-//                entity.setName(bookDto.getName());
-//            }
-//            if (bookDto.getNumberShelf() != null) {
-//                entity.setNumberShelf(bookDto.getNumberShelf());
-//            }
-//            if (bookDto.getStatusBook() != null) {
-//                entity.setStatus(bookDto.getStatusBook().name());
-//            }
-//            entity.setName(bookDto.getName() != null ? bookDto.getName() : null);
-//            entity.setNumberShelf(bookDto.getNumberShelf() != null ? bookDto.getNumberShelf() : null);
-//            entity.setStatus(bookDto.getStatusBook() != null ? bookDto.getStatusBook().name() : null);
-            bookRepository.save(modelMapper.map(bookDto, BookEntity.class));
+            BookEntity entity = opt.get();
+            modelMapper.map(bookDto, entity);
+            bookRepository.save(entity);
         }
     }
 

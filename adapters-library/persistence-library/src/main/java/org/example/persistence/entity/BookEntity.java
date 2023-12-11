@@ -9,9 +9,6 @@ import java.util.Objects;
 @KeySpace("book")
 @Getter
 @Setter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class BookEntity {
 
     @Id

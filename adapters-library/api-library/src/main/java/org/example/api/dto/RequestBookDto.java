@@ -4,9 +4,6 @@ import io.swagger.v3.oas.annotations.Parameter;
 import lombok.*;
 import org.example.core.domain.StatusBook;
 
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class RequestBookDto {

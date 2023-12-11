@@ -3,9 +3,6 @@ package org.example.core.dto;
 import lombok.*;
 import org.example.core.domain.StatusBook;
 
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class BookDto {
