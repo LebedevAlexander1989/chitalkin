@@ -10,5 +10,11 @@
     </parent>
 
     <artifactId>persistence-library</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>core-library</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

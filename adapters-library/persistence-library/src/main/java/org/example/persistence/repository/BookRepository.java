@@ -1,12 +1,11 @@
 package org.example.persistence.repository;
 
 import org.example.persistence.entity.BookEntity;
+import org.example.persistence.interceptor.InterceptorRepository;
 import org.springframework.data.keyvalue.repository.KeyValueRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
-public interface BookRepository extends KeyValueRepository<BookEntity, Integer> {
+public interface BookRepository extends KeyValueRepository<BookEntity, Integer>, InterceptorRepository {
 
 }
