@@ -8,5 +8,8 @@ Java 17, SpringBoot
 Для запуска приложения необходимо в 'RUN CONFIGURATION' в 'ENVIRONMENT VARIABLES' использовать следующие параметры:
 SERVER.PORT=8081 (можно любой);
 
+# Swagger
 Для того, чтобы активировать swagger используйте профиль swagger
+Дефолтные настройки swagger хранятся в application.properties
+
 
