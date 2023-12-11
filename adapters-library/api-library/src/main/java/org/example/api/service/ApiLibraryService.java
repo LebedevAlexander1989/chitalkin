@@ -1,4 +1,4 @@
-package org.example.api.controller.base;
+package org.example.api.service;
 
 import org.example.api.dto.RequestBookDto;
 import org.example.api.dto.ResponseBookDto;
@@ -6,9 +6,7 @@ import org.example.api.dto.ResponseStatusBookDto;
 
 import java.util.List;
 
-public interface ApiLibrary {
-
-    String BASE_URL = "/api";
+public interface ApiLibraryService {
 
     List<ResponseBookDto> getAll();
 

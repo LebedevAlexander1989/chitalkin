@@ -12,6 +12,7 @@
         <lombok.version>1.18.30</lombok.version>
         <springBoot.version>3.2.0</springBoot.version>
         <springDoc.version>2.2.0</springDoc.version>
+        <modelMapper.version>3.2.0</modelMapper.version>
     </properties>
 
     <dependencyManagement>
@@ -34,7 +35,12 @@
             <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-                <version>2.2.0</version>
+                <version>${springDoc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>${modelMapper.version}</version>
             </dependency>
         </dependencies>
 

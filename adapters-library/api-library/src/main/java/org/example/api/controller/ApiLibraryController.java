@@ -1,13 +1,13 @@
 package org.example.api.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.example.api.controller.base.ApiLibrary;
-import org.example.core.service.BookService;
+import org.example.api.dto.RequestBookDto;
 import org.example.api.dto.ResponseBookDto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.example.api.dto.ResponseStatusBookDto;
+import org.example.api.service.ApiLibraryService;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,13 +17,34 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ApiLibraryController implements ApiLibrary {
 
-    private final BookService bookService;
+    private final ApiLibraryService apiLibraryService;
+
     @Override
-    @GetMapping(value = "/all/", produces = "application/json")
+    @Operation(summary = "Получить список книг")
+    @GetMapping(value = "/all", produces = "application/json")
     public @ResponseBody List<ResponseBookDto> getAll() {
-        return bookService.getAll()
-                .stream()
-                .map(book -> new ResponseBookDto(book.id(), book.name()))
-                .toList();
+        return apiLibraryService.getAll();
+    }
+
+    @Override
+    @Operation(summary = "Добавить книгу")
+    @PostMapping(value = "/add", produces = "application/json")
+    public @ResponseBody ResponseBookDto add(@RequestBody RequestBookDto requestBookDto) {
+        return apiLibraryService.add(requestBookDto);
+
+    }
+
+    @Override
+    @PutMapping(value = "update")
+    @Operation(summary = "Обновить информацию о книге")
+    public void update(@RequestBody RequestBookDto requestBookDto) {
+        apiLibraryService.update(requestBookDto);
+    }
+
+    @Override
+    @Operation(summary = "Узнать статус книги")
+    @GetMapping(value = "/status/{id}", produces = "application/json")
+    public @ResponseBody ResponseStatusBookDto getStatus(@PathVariable(name = "id") int id) {
+        return apiLibraryService.getStatus(id);
     }
 }

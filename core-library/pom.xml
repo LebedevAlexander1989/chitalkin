@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>core-library</artifactId>
-    <dependencies>
+        <dependencies>
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>persistence-library</artifactId>
