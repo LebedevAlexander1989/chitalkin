@@ -1,12 +1,10 @@
 package org.example.core.service.impl;
 
-import org.example.core.domain.StatusBook;
 import org.example.core.dto.BookDto;
 import org.example.core.service.BookService;
 import org.example.persistence.entity.BookEntity;
 import org.example.persistence.repository.BookRepository;
 import org.modelmapper.ModelMapper;
-import org.modelmapper.TypeMap;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
