@@ -1,5 +1,6 @@
 package org.example.core.service.impl;
 
+import lombok.RequiredArgsConstructor;
 import org.example.core.domain.Book;
 import org.example.core.service.BookService;
 import org.example.persistence.entity.BookEntity;
@@ -10,16 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class BookServiceImpl implements BookService {
 
     private final BookEntityService bookEntityService;
     private final ModelMapper modelMapper;
-
-    public BookServiceImpl(BookEntityService bookEntityService, ModelMapper modelMapper) {
-        this.bookEntityService = bookEntityService;
-        this.modelMapper = modelMapper;
-
-    }
 
     @Override
     public List<Book> getAll() {

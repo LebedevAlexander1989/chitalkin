@@ -12,7 +12,7 @@ import org.springframework.data.map.repository.config.EnableMapRepositories;
 
 @Configuration
 @EnableMapRepositories(basePackages = "org.example.persistence")
-@ComponentScan(basePackages = {"org.example.api", "org.example.core"})
+@ComponentScan(basePackages = {"org.example.api", "org.example.core", "org.example.persistence"})
 public class ConfigApp {
 
     @Bean
