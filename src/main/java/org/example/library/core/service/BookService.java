@@ -1,6 +1,8 @@
 package org.example.library.core.service;
 
-import org.example.core.domain.Book;
+
+import org.example.library.api.dto.RequestBookDto;
+import org.example.library.core.domain.Book;
 
 import java.util.List;
 
@@ -8,9 +10,9 @@ public interface BookService {
 
     List<Book> getAll();
 
-    Book add(Book book);
+    Book add(RequestBookDto request);
 
-    void update(Book book);
+    void update(RequestBookDto request);
 
     String getStatus(int id);
 }

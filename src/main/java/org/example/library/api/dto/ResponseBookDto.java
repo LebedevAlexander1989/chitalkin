@@ -2,20 +2,21 @@ package org.example.library.api.dto;
 
 
 import lombok.*;
-import org.example.core.domain.StatusBook;
+import org.example.library.core.domain.StatusBook;
 
-@Getter
-@Setter
-public class ResponseBookDto {
-    private Integer id;
-    private String name;
-    private Integer numberShelf;
-    private StatusBook status;
+@Builder
+public record ResponseBookDto(
+        Integer id,
+        String title,
+        Integer numberShelf,
+        StatusBook status)
+{
+
     @Override
     public String toString() {
         return "ResponseBookDto{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", title='" + title + '\'' +
                 ", numberShelf=" + numberShelf +
                 ", status=" + status +
                 '}';

@@ -1,10 +1,10 @@
 package org.example.library.core.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import org.example.core.domain.Book;
-import org.example.core.service.BookService;
-import org.example.persistence.entity.BookEntity;
-import org.example.persistence.service.BookEntityService;
+import org.example.library.api.dto.RequestBookDto;
+import org.example.library.core.domain.Book;
+import org.example.library.core.service.BookService;
+import org.example.library.persistence.entity.BookEntity;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BookServiceImpl implements BookService {
 
-    private final BookEntityService bookEntityService;
     private final ModelMapper modelMapper;
 
     @Override
@@ -26,13 +25,13 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book add(Book book) {
+    public Book add(RequestBookDto request) {
         BookEntity entity = bookEntityService.add(modelMapper.map(book, BookEntity.class));
         return modelMapper.map(entity, Book.class);
     }
 
     @Override
-    public void update(Book book)  {
+    public void update(RequestBookDto request)  {
         BookEntity entity = bookEntityService.findById(book.getId());
         if (entity != null) {
             modelMapper.map(book, entity);

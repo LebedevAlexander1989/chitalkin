@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 public class Book {
     private Integer id;
-    private String name;
+    private String title;
     private Integer numberShelf;
     private StatusBook statusBook;
 }
