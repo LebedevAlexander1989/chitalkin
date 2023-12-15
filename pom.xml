@@ -13,9 +13,6 @@
 
     <modules>
         <module>bom-library</module>
-        <module>adapters-library</module>
-        <module>core-library</module>
-        <module>starter-library</module>
     </modules>
 
     <properties>
