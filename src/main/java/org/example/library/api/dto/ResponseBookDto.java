@@ -18,7 +18,7 @@ public record ResponseBookDto(
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", numberShelf=" + numberShelf +
-                ", status=" + status +
+                ", statusBook=" + status +
                 '}';
     }
 }

@@ -4,8 +4,7 @@ import org.example.library.core.domain.StatusBook;
 
 public record RequestBookDto (
         Integer id,
-        String name,
+        String title,
         Integer numberShelf,
-        StatusBook status) {
-
+        StatusBook statusBook) {
 }

@@ -30,10 +30,10 @@ public class LibraryController {
         return bookService.getAll()
                 .stream()
                 .map(b -> ResponseBookDto.builder()
-                        .id(b.getId())
-                        .title(b.getTitle())
-                        .numberShelf(b.getNumberShelf())
-                        .status(b.getStatusBook())
+                        .id(b.id())
+                        .title(b.title())
+                        .numberShelf(b.numberShelf())
+                        .status(b.statusBook())
                         .build())
                 .toList();
     }
@@ -51,7 +51,7 @@ public class LibraryController {
                                             {
                                               "name": "Игрок",
                                               "numberShelf": 1,
-                                              "status": "FREE"
+                                              "statusBook": "FREE"
                                             }
                                             """,
                                     summary = "Пример запроса на добавление книги"),
@@ -59,12 +59,11 @@ public class LibraryController {
     public @ResponseBody ResponseBookDto add(@RequestBody RequestBookDto requestBookDto) {
         Book book = bookService.add(requestBookDto);
         return ResponseBookDto.builder()
-                .id(book.getId())
-                .title(book.getTitle())
-                .numberShelf(book.getNumberShelf())
-                .status(book.getStatusBook())
+                .id(book.id())
+                .title(book.title())
+                .numberShelf(book.numberShelf())
+                .status(book.statusBook())
                 .build();
-
     }
 
     @PutMapping(value = "update")

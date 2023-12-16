@@ -2,11 +2,10 @@ package org.example.library.core.domain;
 
 import lombok.*;
 
-@Getter
-@Setter
-public class Book {
-    private Integer id;
-    private String title;
-    private Integer numberShelf;
-    private StatusBook statusBook;
-}
+@Builder
+public record Book(
+        Integer id,
+        String title,
+        Integer numberShelf,
+        StatusBook statusBook
+) {}
