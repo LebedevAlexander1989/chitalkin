@@ -6,9 +6,9 @@ public enum StatusBook {
     FREE("свободна"),
     ON_READING("на прочтении");
 
-    private String description;
+    private String status;
 
-    StatusBook(String description) {
-        this.description = description;
+    StatusBook(String status) {
+        this.status = status;
     }
 }
