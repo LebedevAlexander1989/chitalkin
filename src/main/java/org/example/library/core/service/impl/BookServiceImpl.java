@@ -2,6 +2,7 @@ package org.example.library.core.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.example.library.api.dto.RequestBookDto;
+import org.example.library.api.error.NotFoundException;
 import org.example.library.core.domain.Book;
 import org.example.library.core.domain.StatusBook;
 import org.example.library.core.service.BookService;
@@ -48,19 +49,19 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void update(RequestBookDto request)  {
-        Optional<BookEntity> opt = bookRepository.findById(request.id());
-        if (opt.isPresent()) {
-            BookEntity entity = opt.get();
-            entity.setTitle(request.title());
-            entity.setNumberShelf(request.numberShelf());
-            entity.setStatusBook(request.statusBook().name());
-            bookRepository.save(entity);
-        }
+        Integer id = request.id();
+        BookEntity entity = bookRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException(String.format("Книга с id: %s не найдена", id)));
+        entity.setTitle(request.title());
+        entity.setNumberShelf(request.numberShelf());
+        entity.setStatusBook(request.statusBook().name());
+        bookRepository.save(entity);
     }
 
     @Override
     public String getStatus(int id) {
-        Optional<BookEntity> opt = bookRepository.findById(id);
-        return opt.map(BookEntity::getStatusBook).orElse(null);
+        return bookRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException(String.format("Книга с id: %s не найдена", id)))
+                .getStatusBook();
     }
 }

@@ -49,7 +49,7 @@ public class LibraryController {
                             @ExampleObject(
                                     value = """
                                             {
-                                              "name": "Игрок",
+                                              "title": "Игрок",
                                               "numberShelf": 1,
                                               "statusBook": "FREE"
                                             }

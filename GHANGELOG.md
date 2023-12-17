@@ -17,3 +17,4 @@
 3. Перешел в bom с dependency на parent
 4. Удалил избываточные классы в пакете api и persistence
 5. Удалил библиотеку modelMapper. Перешел на record
+6. Добавил RestControllerAdvice
