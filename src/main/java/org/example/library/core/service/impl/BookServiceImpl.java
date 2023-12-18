@@ -2,7 +2,7 @@ package org.example.library.core.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.example.library.api.dto.RequestBookDto;
-import org.example.library.api.error.NotFoundException;
+import org.example.library.api.exception.NotFoundException;
 import org.example.library.core.domain.Book;
 import org.example.library.core.domain.StatusBook;
 import org.example.library.core.service.BookService;
@@ -11,7 +11,6 @@ import org.example.library.persistence.repository.BookRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

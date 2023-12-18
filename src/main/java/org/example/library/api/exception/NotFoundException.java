@@ -1,4 +1,4 @@
-package org.example.library.api.error;
+package org.example.library.api.exception;
 
 public class NotFoundException extends RuntimeException {
     public NotFoundException(String message) {
