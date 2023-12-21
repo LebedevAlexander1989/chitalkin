@@ -19,3 +19,4 @@
 5. Удалил библиотеку modelMapper. Перешел на record
 6. Добавил RestControllerAdvice
 7. Добавил картинку доменной модели
+8. Добавил BACKLOG
