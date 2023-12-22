@@ -4,6 +4,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.library.api.dto.RequestBookDto;
 import org.example.library.api.dto.ResponseBookDto;
@@ -26,7 +27,7 @@ public class LibraryController {
 
     @Operation(summary = "Получить список книг")
     @GetMapping(value = "/all", produces = "application/json")
-    public @ResponseBody List<ResponseBookDto> getAll() {
+    public List<ResponseBookDto> getAll() {
         return bookService.getAll()
                 .stream()
                 .map(b -> ResponseBookDto.builder()
@@ -56,7 +57,8 @@ public class LibraryController {
                                             """,
                                     summary = "Пример запроса на добавление книги"),
                     }))
-    public @ResponseBody ResponseBookDto add(@RequestBody RequestBookDto requestBookDto) {
+
+    public ResponseBookDto add(@RequestBody @Valid RequestBookDto requestBookDto) {
         Book book = bookService.add(requestBookDto);
         return ResponseBookDto.builder()
                 .id(book.id())
@@ -74,7 +76,7 @@ public class LibraryController {
 
     @Operation(summary = "Узнать статус книги")
     @GetMapping(value = "/status/{id}", produces = "application/json")
-    public @ResponseBody ResponseStatusBookDto getStatus(@PathVariable(name = "id") int id) {
+    public ResponseStatusBookDto getStatus(@PathVariable(name = "id") int id) {
         return new ResponseStatusBookDto(StatusBook.valueOf(bookService.getStatus(id)));
     }
 }
