@@ -1,4 +1,4 @@
-package org.example.library.api.controller.exception;
+package org.example.library.api.handler;
 
 import org.example.library.api.dto.ResponseErrorDto;
 import org.example.library.api.exception.NotFoundException;
@@ -13,7 +13,7 @@ import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @RestControllerAdvice
-public class LibraryExceptionHandlerController {
+public class LibraryGlobalExceptionHandler {
 
     @ResponseStatus(NOT_FOUND)
     @ExceptionHandler(NotFoundException.class)
