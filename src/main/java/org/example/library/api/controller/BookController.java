@@ -21,7 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
-public class LibraryController {
+public class BookController {
 
     private final BookService bookService;
 
