@@ -43,3 +43,6 @@
    - https://habr.com/ru/companies/ruvds/articles/440658/
    - https://habr.com/ru/companies/domclick/articles/546922/
    - https://habr.com/ru/companies/otus/articles/452624/
+6. Посмотреть видео
+   - Андрей Беляев — DTO: живи быстро, гори ярко (https://www.youtube.com/watch?v=gD8xUkZW1GU)
+   - Вебинар: Docker — Как работать с контейнерами? (https://youtu.be/qS9KYTcWMlY?si=0LRLCfNhkEzmQqOv)
