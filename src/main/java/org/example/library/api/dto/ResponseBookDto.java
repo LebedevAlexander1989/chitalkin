@@ -9,7 +9,7 @@ public record ResponseBookDto(
         Integer id,
         String title,
         Integer numberShelf,
-        StatusBook status)
+        StatusBook statusBook)
 {
 
     @Override
@@ -18,7 +18,7 @@ public record ResponseBookDto(
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", numberShelf=" + numberShelf +
-                ", statusBook=" + status +
+                ", statusBook=" + statusBook +
                 '}';
     }
 }

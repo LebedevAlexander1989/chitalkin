@@ -34,7 +34,7 @@ public class BookController {
                         .id(b.id())
                         .title(b.title())
                         .numberShelf(b.numberShelf())
-                        .status(b.statusBook())
+                        .statusBook(b.statusBook())
                         .build())
                 .toList();
     }
@@ -64,13 +64,13 @@ public class BookController {
                 .id(book.id())
                 .title(book.title())
                 .numberShelf(book.numberShelf())
-                .status(book.statusBook())
+                .statusBook(book.statusBook())
                 .build();
     }
 
     @PutMapping(value = "update")
     @Operation(summary = "Обновить информацию о книге")
-    public void update(@RequestBody RequestBookDto requestBookDto) {
+    public void update(@RequestBody @Valid RequestBookDto requestBookDto) {
         bookService.update(requestBookDto);
     }
 
