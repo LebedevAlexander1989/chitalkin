@@ -36,13 +36,12 @@
 3. Сделать DOCKER_RUN для приложения (Сергей пришлет примеры)
 4. Добавить команды для запуска докер образов в make
 5. Прочитать статьи
-   - https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html
+   - https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html. **прочитал**
    - https://refactoring.guru/ru/design-patterns/proxy
    - https://microservices.io/patterns/microservices.html
-   - https://habr.com/ru/amp/publications/692916/
+   - Микросервисная архитектура, ее паттерны проектирования и особенности (https://habr.com/ru/amp/publications/692916/). **прочитал**
    - https://habr.com/ru/companies/oleg-bunin/articles/649319/
-   - Удаленная отладка Spring Boot приложений (IntelliJ + Eclipse) 
-   (https://habr.com/ru/articles/513520/). **прочитал**
+   - Удаленная отладка Spring Boot приложений (IntelliJ + Eclipse) (https://habr.com/ru/articles/513520/). **прочитал**
    - https://habr.com/ru/companies/first/articles/702168/
    - https://habr.com/ru/companies/ruvds/articles/485650/
    - https://habr.com/ru/companies/ruvds/articles/440658/
