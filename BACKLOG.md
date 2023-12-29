@@ -37,8 +37,8 @@
 4. Добавить команды для запуска докер образов в make
 5. Прочитать статьи
    - https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html. **прочитал**
-   - Паттерн 'Заместитель' (https://refactoring.guru/ru/design-patterns/proxy)
-   - https://microservices.io/patterns/microservices.html
+   - Паттерн 'Заместитель' (https://refactoring.guru/ru/design-patterns/proxy). **прочитал**
+   - Pattern: Microservice Architecture (https://microservices.io/patterns/microservices.html). **прочитал**
    - Микросервисная архитектура, ее паттерны проектирования и особенности (https://habr.com/ru/amp/publications/692916/). **прочитал**
    - https://habr.com/ru/companies/oleg-bunin/articles/649319/
    - Удаленная отладка Spring Boot приложений (IntelliJ + Eclipse) (https://habr.com/ru/articles/513520/). **прочитал**

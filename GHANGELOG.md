@@ -31,3 +31,4 @@
 
 # release-3.0
 1. Прочитал статью паттерн "Заместитель"
+2. Прочитал статью "Pattern: Microservice Architecture"
