@@ -40,7 +40,7 @@
    - Паттерн 'Заместитель' (https://refactoring.guru/ru/design-patterns/proxy). **прочитал**
    - Pattern: Microservice Architecture (https://microservices.io/patterns/microservices.html). **прочитал**
    - Микросервисная архитектура, ее паттерны проектирования и особенности (https://habr.com/ru/amp/publications/692916/). **прочитал**
-   - https://habr.com/ru/companies/oleg-bunin/articles/649319/
+   - Микросервисы для чайников: как на них перейти с монолита с нуля (https://habr.com/ru/companies/oleg-bunin/articles/649319/). **прочитал**
    - Удаленная отладка Spring Boot приложений (IntelliJ + Eclipse) (https://habr.com/ru/articles/513520/). **прочитал**
    - https://habr.com/ru/companies/first/articles/702168/
    - https://habr.com/ru/companies/ruvds/articles/485650/
