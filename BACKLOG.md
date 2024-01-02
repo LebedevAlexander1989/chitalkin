@@ -23,7 +23,7 @@
 2. Сделать удаленный дебаг через JMX. **ВЫПОЛНЕНО**
 3. Сделать DOCKER_RUN для приложения (Сергей пришлет примеры)
 4. Добавить команды для запуска докер образов в make
-5. установить docker
+5. установить docker. **ВЫПОЛНЕНО**
 6. Прочитать статьи
    - https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html. **прочитал**
    - Паттерн 'Заместитель' (https://refactoring.guru/ru/design-patterns/proxy). **прочитал**
