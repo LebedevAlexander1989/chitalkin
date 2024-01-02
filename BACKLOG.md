@@ -23,7 +23,8 @@
 2. Сделать удаленный дебаг через JMX. **ВЫПОЛНЕНО**
 3. Сделать DOCKER_RUN для приложения (Сергей пришлет примеры)
 4. Добавить команды для запуска докер образов в make
-5. Прочитать статьи
+5. установить docker
+6. Прочитать статьи
    - https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html. **прочитал**
    - Паттерн 'Заместитель' (https://refactoring.guru/ru/design-patterns/proxy). **прочитал**
    - Pattern: Microservice Architecture (https://microservices.io/patterns/microservices.html). **прочитал**
@@ -36,7 +37,7 @@
    - 20 лучших практик по работе с Dockerfile (https://habr.com/ru/companies/domclick/articles/546922/)
    - Введение в Spring Boot Actuator (https://habr.com/ru/companies/otus/articles/452624/)
 6. Посмотреть видео
-   - Андрей Беляев — DTO: живи быстро, гори ярко (https://www.youtube.com/watch?v=gD8xUkZW1GU)
+   - Андрей Беляев — DTO: живи быстро, гори ярко (https://www.youtube.com/watch?v=gD8xUkZW1GU). **посмотрел**
    - Вебинар: Docker — Как работать с контейнерами? (https://youtu.be/qS9KYTcWMlY?si=0LRLCfNhkEzmQqOv)
 
 ### Встреча 28.12.2023
