@@ -38,7 +38,7 @@
    - Введение в Spring Boot Actuator (https://habr.com/ru/companies/otus/articles/452624/)
 6. Посмотреть видео
    - Андрей Беляев — DTO: живи быстро, гори ярко (https://www.youtube.com/watch?v=gD8xUkZW1GU). **посмотрел**
-   - Вебинар: Docker — Как работать с контейнерами? (https://youtu.be/qS9KYTcWMlY?si=0LRLCfNhkEzmQqOv)
+   - Вебинар: Docker — Как работать с контейнерами? (https://youtu.be/qS9KYTcWMlY?si=0LRLCfNhkEzmQqOv). **посмотрел** 
 
 ### Встреча 28.12.2023
 1. доработать мейкфайл с all-app, чтобы не дублировать команды
