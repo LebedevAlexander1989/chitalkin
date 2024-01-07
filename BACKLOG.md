@@ -31,7 +31,7 @@
    - Микросервисная архитектура, ее паттерны проектирования и особенности (https://habr.com/ru/amp/publications/692916/). **прочитал**
    - Микросервисы для чайников: как на них перейти с монолита с нуля (https://habr.com/ru/companies/oleg-bunin/articles/649319/). **прочитал**
    - Удаленная отладка Spring Boot приложений (IntelliJ + Eclipse) (https://habr.com/ru/articles/513520/). **прочитал**
-   - Оптимизация Dockerfile для уменьшения размера и быстрой сборки образов (https://habr.com/ru/companies/first/articles/702168/)
+   - Оптимизация Dockerfile для уменьшения размера и быстрой сборки образов (https://habr.com/ru/companies/first/articles/702168/). **прочитал**
    - Методики уменьшения размеров образов Docker (https://habr.com/ru/companies/ruvds/articles/485650/)
    - Изучаем Docker, часть 4: уменьшение размеров образов и ускорение их сборки (https://habr.com/ru/companies/ruvds/articles/440658/)
    - 20 лучших практик по работе с Dockerfile (https://habr.com/ru/companies/domclick/articles/546922/)
