@@ -17,4 +17,13 @@
 2. Что такое CQRS, можно привести пример?
 3. Что такое Api Composition, можно привести пример?
 4. Зачем нужен .PHONY в макефайле?
+5. При создании образа multistage, пример в докерфайле, у меня возникает ошибка
+The project org.example:library:1.0-SNAPSHOT (/pom.xml) has 1 error
+Non-resolvable parent POM for org.example:library:1.0-SNAPSHOT:
+Could not find artifact org.example:bom:pom:1.0-SNAPSHOT
+and 'parent.relativePath' points at wrong local POM @ line 7, column 13 -> [Help 2]
+Как ее решить?
+6. Почему при пересборке одного образа появляется много образов однотипных с названием none
+7. Обязательно нужно использвать команду docker stop чтобы тормозить контейнер, или можно через ctrl c
+8. Почему не находит путь к мавену?
 
