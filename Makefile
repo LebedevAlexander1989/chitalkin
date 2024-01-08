@@ -1,7 +1,3 @@
-# Не находит путь к мавену, почему так?
-MAVEN := $(shell command -v mvn 2> /dev/null)
-MAVEN_ALIAS = "C:\Users\79855\apache-maven-3.9.6\bin"
-
 # VM options
 SERVER_PORT := -DSERVER.PORT=8081
 SPRING_PROFILES_ACTIVE := -Dspring.profiles.active=swagger
@@ -10,6 +6,9 @@ REMOTE_VM := -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:${R
 JAR_FILE := target/library-1.0-SNAPSHOT.jar
 DOCKER_IMAGE_NAME :=library
 
+# Не находит путь к мавену, почему так?
+MAVEN := $(shell command -v mvn 2> /dev/null)
+MAVEN_ALIAS = "C:\Users\79855\apache-maven-3.9.6\bin"
 .PHONY: init
 init:
 ifneq ($(MAVEN),)
